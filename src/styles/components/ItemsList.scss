@@ -1,0 +1,25 @@
+.itemsList {
+  margin-top: 50px;
+  .element {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 10px;
+
+    .elementContent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 300px;
+
+      input:checked + h4 {
+        text-decoration: line-through;
+      }
+    }
+  }
+}
