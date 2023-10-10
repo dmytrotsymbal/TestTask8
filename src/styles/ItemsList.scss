@@ -9,7 +9,6 @@
     border: 1px solid #ccc;
     margin-bottom: 10px;
     border-radius: 10px;
-    transition: all 0.3s ease;
 
     .elementContent {
       display: flex;
@@ -22,9 +21,5 @@
         text-decoration: line-through;
       }
     }
-  }
-
-  .element:hover {
-    box-shadow: 0px 0px 10px 0px rgba(185, 184, 184, 0.75);
   }
 }

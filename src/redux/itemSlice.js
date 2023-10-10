@@ -34,8 +34,19 @@ const itemSlice = createSlice({
         };
       });
     },
+
+    changeItem: (state, action) => {
+      const { id, title, description } = action.payload;
+      const itemToChange = state.items.find((item) => item.id === id);
+
+      if (itemToChange) {
+        itemToChange.title = title;
+        itemToChange.description = description;
+      }
+    },
   },
 });
 
-export const { addItem, deleteItem, completeItem } = itemSlice.actions;
+export const { addItem, deleteItem, completeItem, changeItem } =
+  itemSlice.actions;
 export default itemSlice.reducer;

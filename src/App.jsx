@@ -1,5 +1,3 @@
-import "./styles/components/InputForm.scss";
-import "./styles/components/ItemsList.scss";
 import { Button, Container } from "react-bootstrap";
 import ItemsList from "./components/ItemsList";
 import InputForm from "./components/InputForm";
@@ -9,7 +7,12 @@ function App() {
   const [showForm, setShowForm] = useState(false);
   return (
     <div className="App">
-      <Container>
+      <Container
+        style={{
+          height: "100vh",
+          boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.75)",
+        }}
+      >
         <Button onClick={() => setShowForm(!showForm)} variant="primary">
           Add item
         </Button>
