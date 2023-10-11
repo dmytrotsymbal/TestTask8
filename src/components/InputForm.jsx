@@ -15,6 +15,10 @@ const InputForm = ({ setShowForm }) => {
   };
 
   const handleAddItem = () => {
+    if (!title || !description) {
+      alert("Please enter title and description");
+      return;
+    }
     dispatch(addItem({ title, description }));
     setShowForm(false);
   };

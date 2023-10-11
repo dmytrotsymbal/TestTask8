@@ -6,9 +6,15 @@ const itemSlice = createSlice({
     items: [
       {
         id: new Date().toISOString(),
-        title: "Title",
-        description: "Description",
+        title: "test1",
+        description: "test1",
         complited: false,
+      },
+      {
+        id: new Date().toISOString(),
+        title: "test2",
+        description: "test2",
+        complited: true,
       },
     ],
   },

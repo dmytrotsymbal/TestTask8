@@ -18,6 +18,10 @@ const ChangePopup = ({
   const dispatch = useDispatch();
 
   const handleSaveChanges = () => {
+    if (!newTitle || !newDescription) {
+      alert("Please enter new title and new description");
+      return;
+    }
     dispatch(
       changeItem({ id: id, title: newTitle, description: newDescription })
     );
