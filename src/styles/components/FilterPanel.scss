@@ -1,0 +1,12 @@
+.filterPanel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  height: 80px;
+  margin-left: calc(50% - 200px);
+
+  button {
+    width: 145px;
+  }
+}
