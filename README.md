@@ -18,6 +18,7 @@ npm install
 ![Alt text](/public/git-image2.png)
 ![Alt text](/public/git-image3.png)
 ![Alt text](/public/git-image4.png)
+![Local storage](/public/git-image5.png)
 
 ## Live 🌐
 
