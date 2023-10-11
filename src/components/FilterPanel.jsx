@@ -5,7 +5,7 @@ const FilterPanel = ({ setShowCompleted }) => {
   return (
     <div className="filterPanel">
       <Button onClick={() => setShowCompleted(false)} variant="secondary">
-        All tasks
+        Not completed tasks
       </Button>
 
       <Button onClick={() => setShowCompleted(true)} variant="secondary">

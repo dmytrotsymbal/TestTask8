@@ -3,20 +3,7 @@ import { createSlice } from "@reduxjs/toolkit";
 const itemSlice = createSlice({
   name: "item",
   initialState: {
-    items: [
-      {
-        id: new Date().toISOString(),
-        title: "test1",
-        description: "test1",
-        complited: false,
-      },
-      {
-        id: new Date().toISOString(),
-        title: "test2",
-        description: "test2",
-        complited: true,
-      },
-    ],
+    items: [],
   },
   reducers: {
     addItem: (state, action) => {

@@ -14,10 +14,10 @@ npm install
 
 ## Preview
 
-![Alt text](/public/image.png)
-![Alt text](/public/image-1.png)
-![Alt text](/public/image-2.png)
-![Alt text](/public/image-3.png)
+![Alt text](/public/git-image1.png)
+![Alt text](/public/git-image2.png)
+![Alt text](/public/git-image3.png)
+![Alt text](/public/git-image4.png)
 
 ## Live 🌐
 
