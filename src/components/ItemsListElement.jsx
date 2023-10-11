@@ -4,21 +4,32 @@ import { completeItem, deleteItem } from "../redux/itemSlice";
 import { useState } from "react";
 import ChangePopup from "./ChangePopup";
 
-const ItemsListElement = ({ id, title, description, complited }) => {
+const ItemsListElement = ({
+  id,
+  title,
+  description,
+  complited,
+  showCompleted,
+}) => {
   const dispatch = useDispatch();
 
   const [showChangePopup, setShowChangePopup] = useState(false);
 
   return (
-    <li key={id} className="element">
+    <li
+      key={id}
+      className={showCompleted ? "itemsListelement_done" : "itemsListelement"}
+    >
       <div className="elementContent">
         <input
           type="checkbox"
           checked={complited}
           onChange={() => dispatch(completeItem(id))}
         />
-        <h4>{title}</h4>
-        <i>{description}</i>
+        <div className="elementContentText">
+          <h4>{title}</h4>
+          <i>{description}</i>
+        </div>
       </div>
 
       <div className="elementActions">

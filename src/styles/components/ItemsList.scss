@@ -1,5 +1,12 @@
 .itemsList {
-  .element {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .itemsListelement,
+  .itemsListelement_done {
+    width: 550px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,16 +21,40 @@
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: space-between;
-      width: 300px;
+      justify-content: flex-start;
+      width: 200px;
 
-      input:checked + h4 {
+      input:checked + div {
         text-decoration: line-through;
       }
+
+      .elementContentText {
+        margin-left: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+    }
+
+    .elementActions {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-around;
+      width: 200px;
     }
   }
 
-  .element:hover {
+  .itemsListelement_done {
+    background-color: #ecc3c3;
+  }
+
+  .itemsListelement:hover {
+    box-shadow: 0px 0px 10px 0px rgba(185, 184, 184, 0.75);
+  }
+
+  .itemsListelement_done:hover {
     box-shadow: 0px 0px 10px 0px rgba(185, 184, 184, 0.75);
   }
 }

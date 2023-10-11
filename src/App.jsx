@@ -9,7 +9,11 @@ function App() {
   return (
     <div className="App">
       <Container className="container">
-        <Button onClick={() => setShowForm(!showForm)} variant="primary">
+        <Button
+          className="addItemBtn"
+          onClick={() => setShowForm(!showForm)}
+          variant="primary"
+        >
           Add item
         </Button>
 

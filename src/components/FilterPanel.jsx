@@ -4,11 +4,11 @@ import "../styles/components/FilterPanel.scss";
 const FilterPanel = ({ setShowCompleted }) => {
   return (
     <div className="filterPanel">
-      <Button onClick={() => setShowCompleted(false)} variant="primary">
+      <Button onClick={() => setShowCompleted(false)} variant="secondary">
         All tasks
       </Button>
 
-      <Button onClick={() => setShowCompleted(true)} variant="primary">
+      <Button onClick={() => setShowCompleted(true)} variant="secondary">
         Completed tasks
       </Button>
     </div>
